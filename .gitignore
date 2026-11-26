@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# 제출 저장소에서 제외 (로컬에만 보관)
+REPORT_NOTES.md
+AI_USAGE.md
+tests/
+tools/
+
+# 보고서·스크린샷 등 제출용 문서
+*.docx
+*.pdf
+screenshots/

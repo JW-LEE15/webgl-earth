@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebGL Earth</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="gl-canvas"></canvas>
+
+  <!-- 상태 표시: FPS, 정점/삼각형 수, WebGL 버전 -->
+  <div id="hud">
+    <div>FPS: <span id="fps">-</span></div>
+    <div>정점: <span id="vertex-count">-</span> / 삼각형: <span id="tri-count">-</span></div>
+    <div id="gl-info"></div>
+    <div id="status"></div>
+    <div class="hint">드래그: 회전 · 휠: 줌 · 더블클릭: 시점 초기화</div>
+  </div>
+
+  <!-- 조절 패널 (js/main.js 에서 내용을 만든다) -->
+  <div id="panel"></div>
+
+  <!-- WebGL2 미지원·로드 실패 시 안내 메시지 -->
+  <div id="error" hidden></div>
+
+  <!-- ES 모듈: 빌드 도구 없이 파일을 나눠 import 한다.
+       셰이더·고도 데이터를 fetch()로 읽기 때문에 file:// 이 아닌 로컬 서버로 열어야 한다. -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

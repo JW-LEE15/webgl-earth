@@ -1,0 +1,28 @@
+{
+  "source": "ETOPO1 1 Arc-Minute Global Relief Model, Ice Surface, grid-registered (etopo1_ice_g_i2)",
+  "units": "meters",
+  "format": "int16 little-endian, row 0 = north (90N), column 0 = 180W, equirectangular",
+  "levels": [
+    {
+      "file": "etopo1_1080x540.i16",
+      "width": 1080,
+      "height": 540,
+      "min": -9332,
+      "max": 5771
+    },
+    {
+      "file": "etopo1_2160x1080.i16",
+      "width": 2160,
+      "height": 1080,
+      "min": -10124,
+      "max": 6232
+    },
+    {
+      "file": "etopo1_4320x2160.i16",
+      "width": 4320,
+      "height": 2160,
+      "min": -10511,
+      "max": 6585
+    }
+  ]
+}
